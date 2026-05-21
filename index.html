@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Language.PRO — Турецкий язык онлайн</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel — замени ВАШ_PIXEL_ID на свой ID из Events Manager -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','2609465259469406');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2609465259469406&ev=PageView&noscript=1"/></noscript>
+<style>
+:root{
+  --p:#7C3AED;--p1:#6D28D9;--pp:#F5F3FF;--pb:#EDE9FE;
+  --g:#16A34A;--gp:#F0FDF4;
+  --y:#D97706;--yp:#FFFBEB;
+  --r:#DC2626;--rp:#FFF1F1;
+  --ink:#111827;--mu:#6B7280;--mu2:#9CA3AF;
+  --bg:#FFFFFF;--bg2:#F9FAFB;--bg3:#F3F4F6;
+  --br:rgba(0,0,0,.08);--brp:rgba(124,58,237,.14);
+  --sh:0 1px 8px rgba(0,0,0,.06);--shm:0 8px 32px rgba(0,0,0,.10);
+  --r8:8px;--r12:12px;--r16:16px;--r24:24px;
+  --f:'Inter',system-ui,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--f);background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;font-size:16px}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.w{max-width:1040px;margin:0 auto;padding:0 20px}
+.wn{max-width:680px;margin:0 auto;padding:0 20px}
+
+/* ─ NAV ─ */
+nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--br)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;max-width:1040px;margin:0 auto;gap:12px}
+.logo{display:flex;align-items:center;gap:9px}
+.logo-box{width:36px;height:36px;border-radius:9px;overflow:hidden;background:var(--pb);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.logo-box img{width:100%;height:100%;object-fit:cover}
+.logo-fb{font-size:14px;font-weight:800;color:var(--p);display:none}
+.logo-name{font-size:17px;font-weight:800;color:var(--ink);letter-spacing:-.02em}
+.logo-name span{color:var(--p)}
+.nav-btn{display:inline-flex;align-items:center;gap:7px;background:#25D366;color:#fff;font-family:var(--f);font-weight:700;font-size:14px;padding:9px 18px;border-radius:var(--r8);border:none;cursor:pointer;transition:all .15s}
+.nav-btn:hover{background:#1fa855;box-shadow:0 4px 16px rgba(37,211,102,.35)}
+
+/* ─ HERO ─ */
+.hero{
+  padding:56px 0 64px;
+  background:
+    linear-gradient(170deg,#F9F7FF 0%,#FFFFFF 55%,#F0F9FF 100%);
+  border-bottom:1px solid var(--br);
+}
+.hero-inner{display:grid;grid-template-columns:1fr 340px;gap:48px;align-items:start}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--p);background:var(--pb);padding:4px 12px;border-radius:99px;margin-bottom:16px;letter-spacing:.02em}
+.hero h1{font-size:clamp(36px,5vw,56px);font-weight:900;line-height:1.06;letter-spacing:-.03em;color:var(--ink);margin-bottom:16px}
+.hero h1 em{font-style:normal;color:var(--p)}
+.hero-desc{font-size:17px;color:var(--mu);line-height:1.7;margin-bottom:28px;max-width:460px}
+.hero-cta{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+.btn-main{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:#25D366;color:#fff;font-family:var(--f);font-weight:700;font-size:16px;padding:16px 28px;border-radius:var(--r12);border:none;cursor:pointer;transition:all .16s;text-align:center}
+.btn-main:hover{background:#1fa855;transform:translateY(-1px);box-shadow:0 8px 24px rgba(37,211,102,.38)}
+.btn-sec{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:transparent;color:var(--mu);font-family:var(--f);font-weight:600;font-size:15px;padding:11px 20px;border-radius:var(--r8);border:1.5px solid var(--br);cursor:pointer;transition:all .16s}
+.btn-sec:hover{border-color:var(--p);color:var(--p)}
+.hero-trust{display:flex;flex-wrap:wrap;gap:16px}
+.trust-item{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--mu);font-weight:500}
+.trust-dot{width:6px;height:6px;border-radius:50%;background:var(--g);flex-shrink:0}
+
+/* HERO CARD */
+.hcard{background:#fff;border:1px solid var(--brp);border-radius:var(--r24);box-shadow:0 4px 32px rgba(124,58,237,.12);padding:24px;position:sticky;top:80px}
+.hcard-top{background:var(--p);color:#fff;border-radius:var(--r12);padding:12px 16px;text-align:center;margin-bottom:20px}
+.hcard-top p{font-size:13px;font-weight:700;opacity:.8;margin-bottom:2px}
+.hcard-top strong{font-size:16px;font-weight:800;display:block}
+.instant{display:flex;align-items:center;gap:8px;background:var(--gp);border:1px solid #86EFAC;border-radius:var(--r8);padding:10px 12px;margin-bottom:16px}
+.instant span{font-size:13px;font-weight:600;color:var(--g)}
+.spots{margin-bottom:16px}
+.spots-top{display:flex;justify-content:space-between;font-size:13px;font-weight:600;margin-bottom:6px}
+.spots-top .left{color:var(--mu)}
+.spots-top .right{color:var(--r)}
+.bar{height:8px;background:var(--bg3);border-radius:99px;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,var(--p),#A78BFA);border-radius:99px;width:73%}
+.hcard .btn-main{width:100%;margin-bottom:8px}
+.hcard-note{font-size:12px;color:var(--mu2);text-align:center}
+.price-preview{display:flex;align-items:baseline;gap:4px;justify-content:center;margin:12px 0 4px}
+.price-from{font-size:13px;color:var(--mu)}
+.price-num{font-size:28px;font-weight:900;color:var(--ink);letter-spacing:-.03em}
+.price-curr{font-size:15px;font-weight:700;color:var(--ink)}
+.price-per{font-size:13px;color:var(--mu)}
+
+/* ─ PROOF BAR ─ */
+.proof-bar{background:var(--ink);padding:20px 0}
+.proof-row{display:flex;justify-content:center;flex-wrap:wrap;gap:0}
+.proof-i{flex:1;min-width:120px;text-align:center;padding:8px 20px;border-right:1px solid rgba(255,255,255,.1)}
+.proof-i:last-child{border-right:none}
+.proof-n{font-size:22px;font-weight:900;color:#fff;letter-spacing:-.02em;line-height:1}
+.proof-l{font-size:11px;color:rgba(255,255,255,.45);margin-top:3px;font-weight:500}
+
+/* ─ VIDEO ─ */
+.video-sec{padding:72px 0;background:var(--bg2);border-top:1px solid var(--br);border-bottom:1px solid var(--br)}
+.video-sec .wn{text-align:center}
+.video-sec h2{font-size:clamp(24px,3.5vw,36px);font-weight:800;letter-spacing:-.025em;margin-bottom:8px}
+.video-sec p{color:var(--mu);font-size:16px;margin-bottom:32px}
+.video-wrap{background:#111;border-radius:var(--r16);overflow:hidden;box-shadow:var(--shm);border:1px solid rgba(255,255,255,.05)}
+.video-bar{background:#0a0a0a;display:flex;align-items:center;gap:6px;padding:8px 14px}
+.vd{width:9px;height:9px;border-radius:50%}
+.video-wrap video{width:100%;display:block;max-height:400px;object-fit:cover}
+
+/* ─ WHY ─ */
+.why{padding:72px 0}
+.why h2{font-size:clamp(24px,3.5vw,36px);font-weight:800;letter-spacing:-.025em;text-align:center;margin-bottom:8px}
+.why .sub{text-align:center;color:var(--mu);margin-bottom:44px;font-size:16px}
+.why-g{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.why-c{background:var(--bg);border:1px solid var(--br);border-radius:var(--r16);padding:28px 24px;transition:all .18s}
+.why-c:hover{box-shadow:var(--shm);border-color:var(--brp);transform:translateY(-2px)}
+.why-e{font-size:32px;margin-bottom:14px}
+.why-t{font-size:16px;font-weight:700;color:var(--ink);margin-bottom:6px}
+.why-d{font-size:14px;color:var(--mu);line-height:1.65}
+
+/* ─ LEVELS ─ */
+.levels{padding:72px 0;background:var(--bg2);border-top:1px solid var(--br);border-bottom:1px solid var(--br)}
+.levels h2{font-size:clamp(24px,3.5vw,36px);font-weight:800;letter-spacing:-.025em;text-align:center;margin-bottom:8px}
+.levels .sub{text-align:center;color:var(--mu);margin-bottom:44px;font-size:16px}
+.lv-g{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.lv-c{background:#fff;border:1px solid var(--br);border-radius:var(--r12);padding:22px 18px;transition:all .18s}
+.lv-c:hover{box-shadow:var(--sh);border-color:var(--brp)}
+.lv-b{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.08em;color:var(--p);background:var(--pb);padding:3px 10px;border-radius:99px;margin-bottom:10px}
+.lv-t{font-size:16px;font-weight:700;color:var(--ink);margin-bottom:3px}
+.lv-p{font-size:11px;color:var(--mu2);font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:10px}
+.lv-li{list-style:none;display:flex;flex-direction:column;gap:5px}
+.lv-li li{font-size:13px;color:var(--mu);display:flex;gap:6px;line-height:1.5}
+.lv-li li::before{content:'·';color:var(--p);font-weight:900;flex-shrink:0}
+
+/* ─ METHOD (one block, no flags) ─ */
+.method{padding:72px 0}
+.method-box{background:var(--pp);border:1px solid var(--brp);border-radius:var(--r16);padding:36px;max-width:760px;margin:0 auto}
+.method-title{font-size:20px;font-weight:800;color:var(--ink);margin-bottom:6px;letter-spacing:-.02em}
+.method-sub{font-size:15px;color:var(--mu);margin-bottom:24px;line-height:1.65}
+.method-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.mi{display:flex;gap:11px;align-items:flex-start;background:#fff;border-radius:var(--r8);padding:14px}
+.mi-ic{font-size:20px;flex-shrink:0;line-height:1}
+.mi-t{font-size:14px;font-weight:700;color:var(--ink);margin-bottom:2px}
+.mi-d{font-size:13px;color:var(--mu);line-height:1.55}
+
+/* ─ PRICING ─ */
+.pricing{padding:72px 0;background:var(--bg2);border-top:1px solid var(--br);border-bottom:1px solid var(--br)}
+.pricing h2{font-size:clamp(24px,3.5vw,36px);font-weight:800;letter-spacing:-.025em;text-align:center;margin-bottom:8px}
+.pricing .sub{text-align:center;color:var(--mu);margin-bottom:16px;font-size:16px}
+.anch-line{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--yp);border:1px solid rgba(217,119,6,.2);border-radius:var(--r8);padding:10px 20px;margin-bottom:40px;font-size:14px;color:var(--ink)}
+.anch-line b{color:var(--y)}
+.price-g{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pc{background:#fff;border:1.5px solid var(--br);border-radius:var(--r16);padding:28px 22px;position:relative;transition:box-shadow .18s}
+.pc:hover{box-shadow:var(--shm)}
+.pc.star{border-color:var(--p);box-shadow:0 0 0 3px rgba(124,58,237,.07)}
+.pop-tag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--p);color:#fff;font-size:11px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;padding:5px 14px;border-radius:99px;white-space:nowrap}
+.pc-tier{font-size:11px;font-weight:700;color:var(--mu2);text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
+.pc-name{font-size:18px;font-weight:800;color:var(--ink);margin-bottom:16px;letter-spacing:-.02em}
+.pc-amt{display:flex;align-items:baseline;gap:3px;margin-bottom:2px}
+.pc-c{font-size:15px;font-weight:700;color:var(--ink)}
+.pc-a{font-size:40px;font-weight:900;color:var(--ink);letter-spacing:-.03em;line-height:1}
+.pc-per{font-size:13px;color:var(--mu);margin-bottom:10px}
+.pc-bonus{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:700;color:var(--y);background:var(--yp);padding:4px 10px;border-radius:99px;margin-bottom:14px}
+.div{height:1px;background:var(--br);margin:16px 0}
+.feats{list-style:none;display:flex;flex-direction:column;gap:8px;margin-bottom:22px}
+.feats li{font-size:14px;color:var(--ink);display:flex;gap:8px;align-items:flex-start;line-height:1.5}
+.ck{color:var(--g);font-weight:800;flex-shrink:0}
+.cx{color:#D1D5DB;flex-shrink:0}
+.pc .btn-main{width:100%;padding:14px 20px;font-size:15px}
+.pc.star .btn-main{background:var(--p)}
+.pc.star .btn-main:hover{background:var(--p1);box-shadow:0 6px 24px rgba(109,40,217,.35)}
+.pc-foot{font-size:12px;color:var(--mu2);text-align:center;margin-top:8px}
+
+/* ─ REVIEWS ─ */
+.reviews{padding:72px 0}
+.reviews h2{font-size:clamp(24px,3.5vw,36px);font-weight:800;letter-spacing:-.025em;text-align:center;margin-bottom:6px}
+.reviews .sub{text-align:center;color:var(--mu);margin-bottom:40px;font-size:16px}
+.rev-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+.rev-i{border-radius:var(--r8);overflow:hidden;border:1px solid var(--br);transition:transform .18s;cursor:pointer}
+.rev-i:hover{transform:scale(1.02);box-shadow:var(--shm)}
+.rev-i img{width:100%;height:195px;object-fit:cover;object-position:top;display:block}
+
+/* ─ BOTTOM CTA ─ */
+.bottom-cta{padding:72px 0;background:var(--p);text-align:center}
+.bottom-cta h2{font-size:clamp(28px,4vw,44px);font-weight:900;color:#fff;letter-spacing:-.03em;margin-bottom:10px}
+.bottom-cta p{font-size:17px;color:rgba(255,255,255,.7);margin-bottom:32px}
+.bottom-cta .btn-main{background:#fff;color:var(--p);display:inline-flex;margin:0 auto}
+.bottom-cta .btn-main:hover{background:#F5F3FF;box-shadow:0 8px 32px rgba(0,0,0,.2);transform:translateY(-1px)}
+.spots-small{margin-top:16px;font-size:13px;color:rgba(255,255,255,.5)}
+.spots-small b{color:rgba(255,255,255,.85)}
+
+/* ─ FAQ ─ */
+.faq{padding:64px 0;background:var(--bg2);border-top:1px solid var(--br)}
+.faq h2{font-size:clamp(22px,3vw,32px);font-weight:800;letter-spacing:-.025em;text-align:center;margin-bottom:32px}
+.faq-wrap{max-width:680px;margin:0 auto;display:flex;flex-direction:column;gap:2px}
+.fq{background:#fff;border:1px solid var(--br);border-radius:var(--r8)}
+.fq-q{width:100%;text-align:left;background:none;border:none;padding:16px 18px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px;font-family:var(--f);font-size:15px;font-weight:600;color:var(--ink);transition:background .12s}
+.fq-q:hover{background:var(--bg2)}
+.fq-ic{width:22px;height:22px;border-radius:50%;border:1.5px solid var(--br);display:flex;align-items:center;justify-content:center;color:var(--p);font-size:16px;flex-shrink:0;transition:all .18s}
+.fq.open .fq-ic{background:var(--p);border-color:var(--p);color:#fff;transform:rotate(45deg)}
+.fq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.fq-ai{padding:0 18px 16px;font-size:14px;color:var(--mu);line-height:1.75}
+.fq.open .fq-a{max-height:300px}
+
+/* ─ FOOTER ─ */
+footer{background:var(--ink);padding:24px 0}
+.foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+.foot-logo{font-size:16px;font-weight:800;color:#fff;letter-spacing:-.02em}
+.foot-logo span{color:#A78BFA}
+.foot-links{display:flex;gap:20px;flex-wrap:wrap}
+.foot-links a{font-size:13px;color:rgba(255,255,255,.35);transition:color .15s}
+.foot-links a:hover{color:#A78BFA}
+
+/* ─ HERO PILLS ─ */
+.hero-pills{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:18px}
+.hpill{font-size:12px;font-weight:600;color:var(--p);background:var(--pp);padding:5px 12px;border-radius:99px;border:1px solid var(--brp)}
+
+/* ─ SOCIAL PROOF ROW ─ */
+.hero-sp{display:flex;align-items:center;gap:10px;margin-bottom:20px}
+.hero-avatars{display:flex}
+.hero-avatars span{width:30px;height:30px;border-radius:50%;background:var(--pp);border:2px solid #fff;display:flex;align-items:center;justify-content:center;font-size:14px;margin-left:-8px}
+.hero-avatars span:first-child{margin-left:0}
+.hero-sp-text{font-size:13px;color:var(--mu);font-weight:500}
+.hero-sp-text strong{color:var(--ink);font-weight:800}
+.wa-fl{position:fixed;bottom:20px;right:20px;z-index:999;width:52px;height:52px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.45);transition:transform .18s;cursor:pointer}
+.wa-fl:hover{transform:scale(1.1)}
+.wa-fl svg{width:26px;height:26px;fill:#fff}
+
+/* ─ ANIM ─ */
+.up{opacity:0;transform:translateY(14px);transition:opacity .5s,transform .5s}
+.up.in{opacity:1;transform:none}
+
+/* ─ RESPONSIVE — MOBILE FIRST ─ */
+
+/* Base mobile styles override */
+@media(max-width:880px){
+  .hero-inner{grid-template-columns:1fr}
+  .hcard{display:none}
+  .why-g{grid-template-columns:1fr 1fr}
+  .lv-g{grid-template-columns:1fr 1fr}
+  .price-g{grid-template-columns:1fr}
+  .method-row{grid-template-columns:1fr}
+}
+
+/* ── PHONE ── */
+@media(max-width:580px){
+  /* Global */
+  .w,.wn{padding:0 16px}
+  .sec,.why,.levels,.method,.pricing,.reviews,.faq{padding:52px 0}
+  .video-sec{padding:52px 0}
+  .bottom-cta{padding:52px 0}
+
+  /* Nav */
+  nav .nav{padding:10px 16px}
+  .logo-name{font-size:16px}
+  .nav-btn{font-size:13px;padding:8px 14px}
+
+  /* Hero mobile — centered, fills screen */
+  .hero{padding:32px 0 40px;min-height:auto}
+  .hero-inner>div:first-child{text-align:center}
+  .hero-badge{justify-content:center}
+  .hero h1{font-size:38px;letter-spacing:-.025em;margin-bottom:14px}
+  .hero-desc{font-size:15px;margin-bottom:18px;max-width:100%}
+  .hero-pills{justify-content:center;margin-bottom:16px}
+  .hero-sp{justify-content:center;margin-bottom:18px}
+  .hero-trust{justify-content:center;flex-direction:column;align-items:center;gap:8px}
+  .trust-item{font-size:13px}
+  .hero-cta{align-items:center;margin-bottom:18px}
+  .hero-cta .btn-main{width:100%;justify-content:center;font-size:16px;padding:16px 20px}
+  .hero-cta>div{width:100%;justify-content:center}
+  .hero-cta .btn-sec{flex:1;justify-content:center;text-align:center;font-size:14px}
+
+  /* Mobile CTA sticky bar — появляется внизу */
+  .mobile-sticky{display:flex}
+
+  /* Proof bar */
+  .proof-row{flex-wrap:wrap}
+  .proof-i{min-width:50%;border-right:none;border-bottom:1px solid rgba(255,255,255,.1);padding:12px 10px}
+  .proof-n{font-size:20px}
+
+  /* Why */
+  .why-g{grid-template-columns:1fr}
+  .why h2{font-size:26px}
+  .why-c{padding:22px 18px}
+
+  /* Levels */
+  .lv-g{grid-template-columns:1fr}
+  .levels h2{font-size:26px}
+
+  /* Method */
+  .method h2,.method-title{font-size:18px}
+  .method-box{padding:24px 18px}
+  .method-row{grid-template-columns:1fr}
+
+  /* Pricing */
+  .pricing h2{font-size:26px}
+  .anch-line{font-size:13px;padding:10px 14px;text-align:center}
+  /* Featured plan on mobile */
+  #pricing .up[style*="max-width:520px"]{padding:24px 18px;margin-bottom:20px}
+  #pricing .up[style*="max-width:520px"] span[style*="font-size:52px"]{font-size:42px}
+
+  /* Reviews */
+  .rev-g{grid-template-columns:repeat(2,1fr);gap:8px}
+  .rev-i img{height:160px}
+  .reviews h2{font-size:26px}
+
+  /* FAQ */
+  .faq h2{font-size:24px}
+  .fq-q{font-size:14px;padding:14px 16px}
+
+  /* Bottom CTA */
+  .bottom-cta h2{font-size:28px}
+  .bottom-cta .btn-main{width:100%;justify-content:center}
+  .bottom-cta p{font-size:15px}
+
+  /* Footer */
+  .foot{flex-direction:column;align-items:flex-start;gap:10px}
+  .foot-links{gap:14px}
+
+  /* Float WA — bigger on mobile */
+  .wa-fl{width:56px;height:56px;bottom:80px;right:16px}
+
+  /* Video */
+  .video-sec h2{font-size:24px}
+}
+
+/* ── MOBILE STICKY CTA BAR ── */
+.mobile-sticky{
+  display:none;
+  position:fixed;bottom:0;left:0;right:0;z-index:500;
+  background:#fff;border-top:1px solid var(--br);
+  padding:10px 16px 12px;
+  box-shadow:0 -4px 20px rgba(0,0,0,.10);
+  align-items:center;justify-content:space-between;gap:10px;
+}
+.mobile-sticky .price-pill{font-size:13px;font-weight:800;color:var(--ink);line-height:1.2}
+.mobile-sticky .price-pill span{font-size:20px;color:var(--p)}
+.mobile-sticky .ms-btn{display:flex;align-items:center;gap:7px;background:#25D366;color:#fff;font-family:var(--f);font-weight:700;font-size:14px;padding:12px 18px;border-radius:var(--r8);border:none;cursor:pointer;white-space:nowrap;text-decoration:none}
+.mobile-sticky .ms-btn:hover{background:#1fa855}
+@media(max-width:580px){.mobile-sticky{display:flex}}
+@media(max-width:880px){#mobile-countdown{display:block!important}}
+
+</style>
+</head>
+<body>
+
+<!-- MOBILE STICKY CTA — видна только на телефоне -->
+<div class="mobile-sticky">
+  <div class="price-pill">
+    от <span>9 990 ₸</span><br>
+    <span style="font-size:11px;color:var(--mu);font-weight:500">⚡ доступ сразу · 🎤 носитель</span>
+  </div>
+  <a href="https://wa.me/77009570067?text=Сәлем! Language.PRO марафонына жазылғым келеді / Привет! Хочу записаться на марафон турецкого" class="ms-btn" onclick="fbq('track','Lead')">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Записаться
+  </a>
+</div>
+
+<!-- WA FLOATING -->
+<a href="https://wa.me/77009570067?text=Сәлем! Language.PRO марафонына жазылғым келеді / Привет! Хочу записаться на марафон" class="wa-fl" onclick="fbq('track','Lead')">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- NAV -->
+<nav>
+  <div class="nav">
+    <div class="logo">
+      <div class="logo-box">
+        <img src="logo.jpeg" alt="Logo" onerror="this.style.display='none';this.parentElement.querySelector('.logo-fb').style.display='block'">
+        <span class="logo-fb">L</span>
+      </div>
+      <span class="logo-name">Language<span>.PRO</span></span>
+    </div>
+    <a href="https://wa.me/77009570067?text=Сәлем! Language.PRO марафонына жазылғым келеді / Привет! Хочу записаться" class="nav-btn" onclick="fbq('track','Lead')">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Записаться
+    </a>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="w">
+    <div class="hero-inner">
+      <div>
+        <!-- BADGE -->
+        <div class="hero-badge">🇹🇷 Онлайн-марафон турецкого языка</div>
+
+        <!-- HEADLINE -->
+        <h1>Заговори<br>по-турецки<br>за <em>30 дней</em></h1>
+
+        <!-- DESC -->
+        <p class="hero-desc">Видео-уроки на казахском и русском, куратор 24/7 и живой разговорный клуб с носителем из Турции. Доступ — сразу после оплаты.</p>
+
+        <!-- MOBILE MINI STATS — 3 пилюли, только телефон -->
+        <div class="hero-pills">
+          <span class="hpill">⚡ Доступ сразу</span>
+          <span class="hpill">🎤 Носитель языка</span>
+          <span class="hpill">🇰🇿 KZ / RU</span>
+          <span class="hpill">24/7 куратор</span>
+        </div>
+
+        <!-- SOCIAL PROOF ROW -->
+        <div class="hero-sp">
+          <div class="hero-avatars">
+            <span>👩</span><span>👨</span><span>👩</span><span>🧑</span>
+          </div>
+          <div class="hero-sp-text">
+            <strong>1 200+</strong> студентов уже учатся
+          </div>
+        </div>
+
+        <!-- CTA BUTTONS -->
+        <div class="hero-cta">
+          <a href="https://wa.me/77009570067?text=Сәлем! Language.PRO марафонына жазылғым келеді / Привет! Хочу записаться на марафон турецкого" class="btn-main" onclick="fbq('track','Lead')">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Записаться в WhatsApp
+          </a>
+          <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <a href="#video" class="btn-sec">▶ Видео-обзор</a>
+            <a href="#pricing" class="btn-sec">Тарифы →</a>
+          </div>
+        </div>
+
+        <!-- TRUST DOTS -->
+        <div class="hero-trust">
+          <div class="trust-item"><span class="trust-dot"></span>Доступ сразу после оплаты</div>
+          <div class="trust-item"><span class="trust-dot"></span>Обучение на казахском и русском 🇰🇿</div>
+          <div class="trust-item"><span class="trust-dot"></span>Куратор 24/7</div>
+        </div>
+
+        <!-- MOBILE COUNTDOWN -->
+        <div id="mobile-countdown" style="display:none;margin-top:18px;background:linear-gradient(135deg,#4c1d95,#6d28d9);border-radius:12px;padding:14px 16px">
+          <div style="font-size:11px;font-weight:700;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px">🔥 Набор закрывается через</div>
+          <div style="display:flex;gap:6px;align-items:stretch">
+            <div style="flex:1;background:rgba(0,0,0,.25);border-radius:8px;padding:10px 4px;text-align:center">
+              <div id="m-cd-d" style="font-size:26px;font-weight:900;color:#fff;line-height:1">00</div>
+              <div style="font-size:10px;color:rgba(255,255,255,.5);margin-top:3px">дней</div>
+            </div>
+            <div style="display:flex;align-items:center;font-size:20px;font-weight:900;color:rgba(255,255,255,.35)">:</div>
+            <div style="flex:1;background:rgba(0,0,0,.25);border-radius:8px;padding:10px 4px;text-align:center">
+              <div id="m-cd-h" style="font-size:26px;font-weight:900;color:#fff;line-height:1">00</div>
+              <div style="font-size:10px;color:rgba(255,255,255,.5);margin-top:3px">часов</div>
+            </div>
+            <div style="display:flex;align-items:center;font-size:20px;font-weight:900;color:rgba(255,255,255,.35)">:</div>
+            <div style="flex:1;background:rgba(0,0,0,.25);border-radius:8px;padding:10px 4px;text-align:center">
+              <div id="m-cd-m" style="font-size:26px;font-weight:900;color:#fff;line-height:1">00</div>
+              <div style="font-size:10px;color:rgba(255,255,255,.5);margin-top:3px">минут</div>
+            </div>
+            <div style="display:flex;align-items:center;font-size:20px;font-weight:900;color:rgba(255,255,255,.35)">:</div>
+            <div style="flex:1;background:rgba(0,0,0,.25);border-radius:8px;padding:10px 4px;text-align:center">
+              <div id="m-cd-s" style="font-size:26px;font-weight:900;color:#fff;line-height:1">00</div>
+              <div style="font-size:10px;color:rgba(255,255,255,.5);margin-top:3px">сек</div>
+            </div>
+          </div>
+          <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center">
+            <span style="font-size:12px;color:rgba(255,255,255,.55)" id="m-spots-txt">осталось 8 мест из 30</span>
+            <span style="font-size:11px;color:#fbbf24;font-weight:700">Успей →</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT CARD (desktop only) -->
+      <div class="hcard">
+        <div class="hcard-top">
+          <p>До закрытия набора</p>
+          <strong id="hcard-timer">считаем...</strong>
+        </div>
+        <div class="instant">
+          <span style="font-size:16px">⚡</span>
+          <span>Платформа открывается мгновенно</span>
+        </div>
+        <div class="spots">
+          <div class="spots-top">
+            <span class="left">Мест в группе</span>
+            <span class="right" id="spots-count">осталось 8 из 30</span>
+          </div>
+          <div class="bar"><div class="bar-fill"></div></div>
+        </div>
+        <div class="price-preview">
+          <span class="price-from">от</span>
+          <span class="price-curr">₸</span>
+          <span class="price-num">9 990</span>
+          <span class="price-per">/ мес</span>
+        </div>
+        <p style="font-size:12px;color:var(--mu2);text-align:center;margin-bottom:16px">🎤 разговорный клуб с носителем — 1 мес бесплатно</p>
+        <a href="https://wa.me/77009570067?text=Сәлем! Орынды алғым келеді / Хочу занять место в марафоне Language.PRO" class="btn-main" onclick="fbq('track','Lead')">Занять место сейчас</a>
+        <p class="hcard-note" style="margin-top:10px">Ответим за 5 минут 🇰🇿</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF BAR -->
+<div class="proof-bar">
+  <div class="w">
+    <div class="proof-row">
+      <div class="proof-i"><div class="proof-n">1 200+</div><div class="proof-l">студентов</div></div>
+      <div class="proof-i"><div class="proof-n">4</div><div class="proof-l">уровня A1→B2</div></div>
+      <div class="proof-i"><div class="proof-n">28</div><div class="proof-l">уроков на уровень</div></div>
+      <div class="proof-i"><div class="proof-n">24/7</div><div class="proof-l">поддержка</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- VIDEO -->
+<section class="video-sec" id="video">
+  <div class="wn">
+    <h2>Посмотрите как это работает</h2>
+    <p>Видео-обзор платформы и процесса обучения</p>
+    <div class="video-wrap">
+      <div class="video-bar">
+        <div class="vd" style="background:#FF6059"></div>
+        <div class="vd" style="background:#FFBE2E"></div>
+        <div class="vd" style="background:#28CA42"></div>
+      </div>
+      <video src="platform_video.mp4" controls playsinline poster="" style="width:100%;display:block;max-height:420px;object-fit:cover"></video>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why">
+  <div class="w">
+    <h2>Почему Language.PRO</h2>
+    <p class="sub">Не просто курс — система, которая даёт результат</p>
+    <div class="why-g up">
+      <div class="why-c">
+        <div class="why-e">⚡</div>
+        <p class="why-t">Доступ сразу</p>
+        <p class="why-d">Никаких дат старта. Оплатили — начинаете в тот же день. Платформа открывается мгновенно.</p>
+      </div>
+      <div class="why-c">
+        <div class="why-e">🧑‍💼</div>
+        <p class="why-t">Куратор 24/7</p>
+        <p class="why-d">Двуязычный куратор отвечает на вопросы на казахском и русском языках. Без задержек.</p>
+      </div>
+      <div class="why-c">
+        <div class="why-e">🗣️</div>
+        <p class="why-t">Живая практика</p>
+        <p class="why-d">Разговорный клуб с носителем языка из Турции. Говорите — с первого уровня.</p>
+      </div>
+      <div class="why-c">
+        <div class="why-e">📱</div>
+        <p class="why-t">С любого устройства</p>
+        <p class="why-d">Телефон, планшет, компьютер. Учитесь когда и где удобно — без расписания.</p>
+      </div>
+      <div class="why-c">
+        <div class="why-e">🏅</div>
+        <p class="why-t">Сертификат</p>
+        <p class="why-d">После A2 и B2 — официальный сертификат Language.PRO о прохождении уровня.</p>
+      </div>
+      <div class="why-c">
+        <div class="why-e">💡</div>
+        <p class="why-t">Понятно с нуля</p>
+        <p class="why-d">Уроки на русском с примерами из казахского. Схожая грамматика — вы учитесь быстрее.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEVELS -->
+<section class="levels">
+  <div class="w">
+    <h2>Программа обучения</h2>
+    <p class="sub">4 уровня · 4 месяца · От нуля до уверенной речи</p>
+    <div class="lv-g up">
+      <div class="lv-c">
+        <div class="lv-b">A1</div>
+        <p class="lv-t">Начинающий</p>
+        <p class="lv-p">Месяц 1 · 28 уроков</p>
+        <ul class="lv-li">
+          <li>Алфавит и произношение</li>
+          <li>Базовая грамматика</li>
+          <li>300 первых слов</li>
+          <li>Простые диалоги</li>
+        </ul>
+      </div>
+      <div class="lv-c">
+        <div class="lv-b">A2</div>
+        <p class="lv-t">Элементарный</p>
+        <p class="lv-p">Месяц 2 · 28 уроков</p>
+        <ul class="lv-li">
+          <li>Кафе, транспорт, покупки</li>
+          <li>Знакомства и разговор</li>
+          <li>Времена глаголов</li>
+          <li>Разговорный турецкий</li>
+        </ul>
+      </div>
+      <div class="lv-c">
+        <div class="lv-b">B1</div>
+        <p class="lv-t">Средний</p>
+        <p class="lv-p">Месяц 3 · 28 уроков</p>
+        <ul class="lv-li">
+          <li>Свободное общение</li>
+          <li>Сериалы без субтитров</li>
+          <li>Деловая переписка</li>
+          <li>Сложные конструкции</li>
+        </ul>
+      </div>
+      <div class="lv-c">
+        <div class="lv-b">B2</div>
+        <p class="lv-t">Выше среднего</p>
+        <p class="lv-p">Месяц 4 · 28 уроков</p>
+        <ul class="lv-li">
+          <li>Уверенная речь</li>
+          <li>Идиомы и культура</li>
+          <li>Профессиональный язык</li>
+          <li>Переговоры и презентации</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METHOD -->
+<section class="method">
+  <div class="w">
+    <div class="method-box up">
+      <p class="method-title">🇰🇿 Двуязычное обучение</p>
+      <p class="method-sub">Видео-уроки на русском языке с примерами из казахского. Все кураторы двуязычны — пишите на казахском или русском, ответим на том же языке.</p>
+      <div class="method-row">
+        <div class="mi">
+          <span class="mi-ic">🎬</span>
+          <div><p class="mi-t">Уроки на русском</p><p class="mi-d">Все видео и объяснения — чётко и понятно на русском языке</p></div>
+        </div>
+        <div class="mi">
+          <span class="mi-ic">🔤</span>
+          <div><p class="mi-t">Примеры из казахского</p><p class="mi-d">Турецкий и казахский — родственные языки. Объясняем через знакомые параллели</p></div>
+        </div>
+        <div class="mi">
+          <span class="mi-ic">💬</span>
+          <div><p class="mi-t">Обратная связь KZ / RU</p><p class="mi-d">Куратор ответит на казахском или русском — как вам удобнее</p></div>
+        </div>
+        <div class="mi">
+          <span class="mi-ic">🗣️</span>
+          <div><p class="mi-t">Носитель из Турции</p><p class="mi-d">Разговорный клуб — живая практика с настоящим турком</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <div class="w">
+    <h2>Начни с лучшего</h2>
+    <p class="sub">Самый популярный выбор — с куратором и носителем языка</p>
+    <div class="anch-line up">
+      💡 Репетитор = 8 000 ₸ за 1 урок &nbsp;·&nbsp; Марафон с куратором 24/7 = <b>9 990 ₸</b> за 28 уроков + носитель + поддержка
+    </div>
+
+    <!-- MAIN FEATURED PLAN -->
+    <div class="up" style="max-width:520px;margin:0 auto 28px;background:#fff;border:2px solid var(--p);border-radius:var(--r16);padding:36px 32px;position:relative;box-shadow:0 0 0 5px rgba(124,58,237,.07),var(--shm)">
+      <div class="pop-tag" style="font-size:13px;padding:7px 22px">⭐ Рекомендуем</div>
+      <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-top:14px;flex-wrap:wrap">
+        <div>
+          <p style="font-size:12px;font-weight:700;color:var(--mu2);text-transform:uppercase;letter-spacing:.1em;margin-bottom:6px">С куратором</p>
+          <div style="display:flex;align-items:baseline;gap:3px;margin-bottom:4px">
+            <span style="font-size:16px;font-weight:700;color:var(--ink)">₸</span>
+            <span style="font-size:52px;font-weight:900;color:var(--ink);letter-spacing:-.03em;line-height:1">9 990</span>
+            <span style="font-size:14px;color:var(--mu);align-self:flex-end;padding-bottom:5px">/ мес</span>
+          </div>
+          <p style="font-size:13px;color:var(--mu)">⚡ Доступ сразу после оплаты</p>
+        </div>
+        <div style="background:var(--yp);border:1px solid rgba(217,119,6,.2);border-radius:12px;padding:12px 16px;text-align:center;flex-shrink:0">
+          <div style="font-size:11px;font-weight:700;color:var(--y);margin-bottom:3px">🎁 Бонус</div>
+          <div style="font-size:13px;font-weight:800;color:var(--ink)">🎤 Носитель языка</div>
+          <div style="font-size:12px;color:var(--mu)">1-й месяц — бесплатно</div>
+        </div>
+      </div>
+      <div style="height:1px;background:var(--br);margin:22px 0"></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:28px">
+        <div style="display:flex;gap:8px"><span style="color:var(--g);font-weight:800;flex-shrink:0">✓</span><span style="font-size:14px;color:var(--ink)">Платформа 24/7</span></div>
+        <div style="display:flex;gap:8px"><span style="color:var(--g);font-weight:800;flex-shrink:0">✓</span><span style="font-size:14px;color:var(--ink)">Все уроки A1→B2</span></div>
+        <div style="display:flex;gap:8px"><span style="color:var(--g);font-weight:800;flex-shrink:0">✓</span><span style="font-size:14px;color:var(--ink)">Сертификаты A2 и B2</span></div>
+        <div style="display:flex;gap:8px"><span style="color:var(--g);font-weight:800;flex-shrink:0">✓</span><span style="font-size:14px;color:var(--ink);font-weight:700">Куратор 24/7 (KZ/RU)</span></div>
+        <div style="display:flex;gap:8px"><span style="color:var(--g);font-weight:800;flex-shrink:0">✓</span><span style="font-size:14px;color:var(--ink);font-weight:700">Разбор тем и ошибок</span></div>
+        <div style="display:flex;gap:8px"><span style="color:var(--g);font-weight:800;flex-shrink:0">✓</span><span style="font-size:14px;color:var(--ink);font-weight:700">🎤 Разговорный клуб с носителем</span></div>
+      </div>
+      <a href="https://wa.me/77009570067?text=Хочу пакет с куратором 9990₸/мес — Language.PRO" class="btn-main" onclick="fbq('track','Lead')" style="width:100%;justify-content:center;background:var(--p);font-size:17px;padding:18px 28px;border-radius:var(--r12)">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="white" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Записаться в WhatsApp
+      </a>
+      <p style="font-size:12px;color:var(--mu2);text-align:center;margin-top:10px">Ответим за 5 минут 🇰🇿</p>
+    </div>
+
+    <!-- OTHER PLANS TOGGLE -->
+    <div style="text-align:center;margin-bottom:14px">
+      <button onclick="toggleOther()" id="other-btn" style="background:none;border:none;font-family:var(--f);font-size:14px;color:var(--mu);cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:8px 16px">
+        Посмотреть другие варианты ↓
+      </button>
+    </div>
+    <div id="other-plans" style="display:none">
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:660px;margin:0 auto">
+        <div class="pc">
+          <p class="pc-tier">Пакет 01</p>
+          <p class="pc-name" style="font-size:16px">Самообучение</p>
+          <div class="pc-amt"><span class="pc-c">₸</span><span class="pc-a" style="font-size:32px">7 490</span></div>
+          <p class="pc-per">в месяц · ⚡ сразу</p>
+          <div class="div"></div>
+          <ul class="feats" style="margin-bottom:14px;gap:6px">
+            <li><span class="ck">✓</span> Платформа 24/7</li>
+            <li><span class="ck">✓</span> Все уроки A1→B2</li>
+            <li><span class="ck">✓</span> Сертификаты</li>
+            <li><span class="cx">✗</span> <span style="color:#9CA3AF;font-size:13px">Куратор</span></li>
+            <li><span class="cx">✗</span> <span style="color:#9CA3AF;font-size:13px">Носитель / клуб</span></li>
+          </ul>
+          <a href="https://wa.me/77009570067?text=Хочу Самообучение 7490₸/мес — Language.PRO" class="btn-main" onclick="fbq('track','Lead')" style="background:var(--ink);font-size:13px;padding:11px 16px;width:100%;justify-content:center">В WhatsApp</a>
+        </div>
+        <div class="pc">
+          <p class="pc-tier">Пакет 03</p>
+          <p class="pc-name" style="font-size:16px">Полный</p>
+          <div class="pc-amt"><span class="pc-c">₸</span><span class="pc-a" style="font-size:32px">14 990</span></div>
+          <p class="pc-per">в месяц · ⚡ сразу</p>
+          <div class="div"></div>
+          <ul class="feats" style="margin-bottom:14px;gap:6px">
+            <li><span class="ck">✓</span> Всё из пакета 02</li>
+            <li><span class="ck">✓</span> Носитель каждую нед.</li>
+            <li><span class="ck">✓</span> <b>Методичка уровня 📖</b></li>
+          </ul>
+          <a href="https://wa.me/77009570067?text=Хочу Полный пакет 14990₸/мес — Language.PRO" class="btn-main" onclick="fbq('track','Lead')" style="background:var(--ink);font-size:13px;padding:11px 16px;width:100%;justify-content:center">В WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews">
+  <div class="w">
+    <h2>Реальные отзывы</h2>
+    <p class="sub">Скриншоты из WhatsApp — без редактирования</p>
+    <div class="rev-g up">
+      <div class="rev-i"><img src="rev1.jpeg"  alt="Отзыв" loading="lazy"></div>
+      <div class="rev-i"><img src="rev2.jpeg"  alt="Отзыв" loading="lazy"></div>
+      <div class="rev-i"><img src="rev3.jpeg"  alt="Отзыв" loading="lazy"></div>
+      <div class="rev-i"><img src="rev4.jpeg"  alt="Отзыв" loading="lazy"></div>
+      <div class="rev-i"><img src="rev5.jpeg"  alt="Отзыв" loading="lazy"></div>
+      <div class="rev-i"><img src="rev6.jpeg"  alt="Отзыв" loading="lazy"></div>
+      <div class="rev-i"><img src="rev7.jpeg"  alt="Отзыв" loading="lazy"></div>
+      <div class="rev-i"><img src="rev8.jpeg"  alt="Отзыв" loading="lazy"></div>
+      <div class="rev-i"><img src="rev9.jpeg"  alt="Отзыв" loading="lazy"></div>
+      <div class="rev-i"><img src="rev10.jpeg" alt="Отзыв" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="w">
+    <h2>Частые вопросы</h2>
+    <div class="faq-wrap">
+      <div class="fq"><button class="fq-q" onclick="fq(this)"><span>Когда откроется доступ к платформе?</span><div class="fq-ic">+</div></button><div class="fq-a"><p class="fq-ai">Сразу после оплаты — в течение нескольких минут получите данные для входа. Никакого ожидания.</p></div></div>
+      <div class="fq"><button class="fq-q" onclick="fq(this)"><span>На каком языке проходит обучение?</span><div class="fq-ic">+</div></button><div class="fq-a"><p class="fq-ai">Видео-уроки — на русском языке, с примерами из казахского (у языков схожая структура — это помогает учиться быстрее). Кураторы двуязычны: пишите на казахском или русском — ответят на том же языке.</p></div></div>
+      <div class="fq"><button class="fq-q" onclick="fq(this)"><span>Сколько времени нужно в день?</span><div class="fq-ic">+</div></button><div class="fq-a"><p class="fq-ai">20–30 минут в день. Уроки короткие и структурированные. Пропустили день — наверстайте в любое время, доступ 24/7.</p></div></div>
+      <div class="fq"><button class="fq-q" onclick="fq(this)"><span>Чем лучше репетитора?</span><div class="fq-ic">+</div></button><div class="fq-a"><p class="fq-ai">Один урок с репетитором = 5 000–8 000 ₸. Месяц марафона = 9 990 ₸ — это 28 уроков + куратор 24/7 + разговорная практика с носителем. В 8 раз выгоднее, и учитесь в своё время.</p></div></div>
+      <div class="fq"><button class="fq-q" onclick="fq(this)"><span>С какого уровня начать, если турецкий новый?</span><div class="fq-ic">+</div></button><div class="fq-a"><p class="fq-ai">Начинайте с A1 — он создан именно для тех, кто начинает с нуля. Если есть какая-то база — напишите нам в WhatsApp, куратор подберёт уровень за 5 минут.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BOTTOM CTA -->
+<section class="bottom-cta">
+  <div class="w">
+    <h2>Начните сегодня</h2>
+    <p>Доступ открывается сразу после оплаты. Количество мест ограничено.</p>
+    <a href="https://wa.me/77009570067?text=Сәлем! Language.PRO марафонына жазылғым келеді / Привет! Хочу записаться на марафон турецкого" class="btn-main" onclick="fbq('track','Lead')">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="#6D28D9" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Записаться в WhatsApp
+    </a>
+    <p class="spots-small">Мест осталось: <b>8 из 30</b></p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="w">
+    <div class="foot">
+      <span class="foot-logo">Language<span>.PRO</span></span>
+      <div class="foot-links">
+        <a href="tel:+77009570067">+7 700 957 00 67</a>
+        <a href="https://wa.me/77009570067" onclick="fbq('track','Lead')">WhatsApp</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <span style="font-size:12px;color:rgba(255,255,255,.2)">© 2026</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ─ FAQ
+function fq(btn){
+  const el=btn.closest('.fq'),open=el.classList.contains('open');
+  document.querySelectorAll('.fq.open').forEach(e=>e.classList.remove('open'));
+  if(!open)el.classList.add('open');
+}
+
+// ─ Scroll reveal
+const ob=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ob.unobserve(e.target)}})},{threshold:.08});
+document.querySelectorAll('.up').forEach(e=>ob.observe(e));
+
+// ─ Toggle other plans
+function toggleOther(){
+  const el=document.getElementById('other-plans');
+  const btn=document.getElementById('other-btn');
+  const open=el.style.display!=='none';
+  el.style.display=open?'none':'block';
+  btn.textContent=open?'Посмотреть другие варианты ↓':'Скрыть ↑';
+}
+
+// ─ Countdown timer — до конца текущей недели (воскресенье 23:59:59)
+function updateTimer(){
+  const now=new Date();
+  const day=now.getDay();
+  const daysUntilSunday=day===0?0:7-day;
+  const end=new Date(now.getFullYear(),now.getMonth(),now.getDate()+daysUntilSunday,23,59,59);
+  const diff=end-now;
+  if(diff<=0){return;}
+  const d=Math.floor(diff/86400000);
+  const h=Math.floor((diff%86400000)/3600000);
+  const m=Math.floor((diff%3600000)/60000);
+  const s=Math.floor((diff%60000)/1000);
+  const pad=n=>String(n).padStart(2,'0');
+
+  // Desktop card timer
+  const el=document.getElementById('hcard-timer');
+  if(el) el.textContent=d>0?`${d}д ${pad(h)}:${pad(m)}:${pad(s)}`:`${pad(h)}:${pad(m)}:${pad(s)}`;
+
+  // Mobile countdown boxes
+  const md=document.getElementById('m-cd-d');
+  const mh=document.getElementById('m-cd-h');
+  const mm=document.getElementById('m-cd-m');
+  const ms=document.getElementById('m-cd-s');
+  if(md) md.textContent=pad(d);
+  if(mh) mh.textContent=pad(h);
+  if(mm) mm.textContent=pad(m);
+  if(ms) ms.textContent=pad(s);
+}
+updateTimer();
+setInterval(updateTimer,1000);
+
+// ─ Dynamic spots counter (убывает медленно — психологический urgency)
+// Стартовое значение берём из localStorage чтобы не сбрасывать при перезагрузке
+(function(){
+  const BASE=8; // стартовое кол-во мест
+  const stored=localStorage.getItem('lp_spots');
+  let spots=stored?parseInt(stored):BASE;
+  // Раз в ~4 мин уменьшаем на 1 если >1
+  const el=document.getElementById('spots-count');
+  function render(){
+    if(el)el.textContent=`осталось ${spots} из 30`;
+    const mel=document.getElementById('m-spots-txt');
+    if(mel)mel.textContent=`осталось ${spots} мест из 30`;
+  }
+  render();
+  setInterval(function(){
+    if(spots>1){
+      spots--;
+      localStorage.setItem('lp_spots',spots);
+      render();
+    }
+  }, 4*60*1000); // каждые 4 минуты
+})();
+</script>
+</body>
+</html>
